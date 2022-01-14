@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        #container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        textarea {
+            background: white;
+            color: black;
+            border: 1px solid black;
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        
+        button {
+            border: 1px solid black;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+            outline: none;
+            text-align: center;
+            width: 200px;
+            height: 40px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: 0.2s linear;
+        }
+        
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>speech to text</h1>
+    <div id="container">
+        <textarea name="" cols="100" rows="6" id="textbox"></textarea>
+        <button id="startbtn">Start</button>
+        <p id="instructions"></p>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</html>
